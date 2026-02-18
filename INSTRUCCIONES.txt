@@ -1,0 +1,28 @@
+INSTRUCCIONES PARA EJECUTAR LA DEMO FM
+========================================
+
+Para ejecutar este programa en su computadora, siga estos pasos:
+
+OPCIÓN A: Si usa Windows (Recomendado)
+--------------------------------------
+1. Asegúrese de tener Python instalado.
+2. Haga doble clic en el archivo "run_app.bat".
+   Esto instalará las librerías necesarias y abrirá la aplicación automáticamente.
+
+OPCIÓN B: Si usa Linux o Mac
+----------------------------
+1. Abra una terminal en esta carpeta.
+2. Ejecute el siguiente comando:
+   ./run_app.sh
+
+OPCIÓN C: Manualmente (Cualquier sistema)
+-----------------------------------------
+1. Abra una terminal/consola en esta carpeta.
+2. Instale las dependencias:
+   pip install -r requirements.txt
+3. Ejecute la aplicación:
+   streamlit run fm_demo_streamlit.py
+
+NOTA:
+- La aplicación se abrirá en su navegador web predeterminado.
+- Si tiene problemas, asegúrese de que Python esté agregado a su PATH.
