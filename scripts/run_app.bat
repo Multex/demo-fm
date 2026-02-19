@@ -26,7 +26,7 @@ if %errorlevel% neq 0 (
 echo.
 echo Iniciando la aplicacion...
 echo Se abrira en su navegador predeterminado.
-python -m streamlit run src/fm_demo_streamlit.py
+cd /d "%~dp0\.." && python -m streamlit run src\fm_demo_streamlit.py
 
 if %errorlevel% neq 0 (
     echo.

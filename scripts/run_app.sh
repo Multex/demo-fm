@@ -23,4 +23,4 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Iniciando la aplicación..."
-python3 -m streamlit run src/fm_demo_streamlit.py
+cd "$(dirname "$0")/.." && python3 -m streamlit run src/fm_demo_streamlit.py

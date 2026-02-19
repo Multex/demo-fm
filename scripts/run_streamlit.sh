@@ -11,4 +11,4 @@ echo ""
 echo "Presiona Ctrl+C para detener el servidor."
 echo ""
 
-./venv/bin/streamlit run src/fm_demo_streamlit.py
+cd "$(dirname "$0")/.." && ./venv/bin/streamlit run src/fm_demo_streamlit.py

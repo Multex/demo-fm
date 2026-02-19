@@ -1,50 +1,71 @@
-# Demo FM - Modulación en Frecuencia
+# 📡 demo-fm
 
-Demo educativa simple de FM con mensajes no senoidales.
+**Interactive FM modulation demo with Streamlit.** 
 
-## 🚀 Cómo usar
+Visualize non-sinusoidal waveforms, analyze spectra, and compare FM vs AM noise robustness in real-time.
 
-### Opción 1: Streamlit (Recomendado - Interfaz moderna)
-
-```bash
-./run_streamlit.sh
-```
-
-Se abrirá en tu navegador automáticamente.
-
-### Opción 2: Matplotlib (Interfaz básica con sliders)
-
-```bash
-python3 src/fm_non_sinusoidal_demo.py
-```
-
-## 📁 Archivos
-
-- **src/fm_demo_streamlit.py** - Versión principal con Streamlit
-- **run_streamlit.sh** - Script de ejecución (usando venv)
-- **run_app.sh** / **run_app.bat** - Scripts de instalación y ejecución
-
-## 🎛️ Controles
-
-- Forma de onda: Cuadrada / Diente de Sierra / Triangular
-- Fs, duración, fc, fm, Am, kf, H (armónicos)
-- Checkbox para mostrar/ocultar portadora
-
-## 📊 Visualiza
-
-1. Señal moduladora m(t)
-2. Señal FM s(t)
-3. Señal portadora c(t) (opcional)
-4. Frecuencia instantánea fi(t)
-
-## 📐 KPIs mostrados
-
-- Δf (kHz) - Desviación de frecuencia
-- B (kHz) - Ancho de banda (Carson)
-- fc (kHz) - Frecuencia portadora
-- fm (Hz) - Frecuencia del mensaje
-- β - Índice de modulación
+![main](./images/page.png)
 
 ---
 
-**¡Eso es todo! .**
+## 🚀 Quick Start
+
+### Option 1: Using virtual environment (Recommended)
+
+```bash
+./scripts/run_streamlit.sh
+```
+
+### Option 2: Auto-install and run
+
+**Linux:**
+```bash
+./scripts/run_app.sh
+```
+
+**Windows:**
+```bash
+scripts\run_app.bat
+```
+
+### Option 3: Manual
+
+```bash
+pip install -r requirements.txt
+streamlit run src/fm_demo_streamlit.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+demo-fm/
+├── docs/                   # Documentation
+│   ├── README.md           # Detailed docs
+│   ├── info.md             # Educational guide
+│   └── INSTRUCCIONES.txt   # Spanish instructions
+├── scripts/                # Run scripts
+│   ├── run_app.sh
+│   ├── run_app.bat
+│   └── run_streamlit.sh
+├── src/                     # Source code
+│   └── fm_demo_streamlit.py
+└── requirements.txt
+```
+
+---
+
+## 📚 Documentation
+
+- **[docs/info.md](docs/info.md)** - Small guide on FM concepts (Spanish)
+- **[docs/INSTRUCCIONES.txt](docs/INSTRUCCIONES.txt)** - Setup instructions (Spanish)
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.8+
+- Streamlit
+- NumPy
+- Matplotlib
