@@ -32,7 +32,7 @@ scripts\run_app.bat
 
 ```bash
 pip install -r requirements.txt
-streamlit run src/fm_demo_streamlit.py
+streamlit run src/main.py
 ```
 
 ---
