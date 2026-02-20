@@ -42,16 +42,30 @@ streamlit run src/main.py
 ```
 demo-fm/
 ├── docs/                   # Documentation
-│   ├── README.md           # Detailed docs
-│   ├── info.md             # Educational guide
-│   └── INSTRUCCIONES.txt   # Spanish instructions
+│   ├── info.md             # Educational guide (Spanish)
+│   └── INSTRUCCIONES.txt   # Setup instructions (Spanish)
+├── images/                 # Images for documentation
+│   └── page.png
 ├── scripts/                # Run scripts
-│   ├── run_app.sh
-│   ├── run_app.bat
-│   └── run_streamlit.sh
-├── src/                     # Source code
-│   └── fm_demo_streamlit.py
-└── requirements.txt
+│   ├── run_app.sh          # Linux/Mac auto-install script
+│   ├── run_app.bat         # Windows auto-install script
+│   └── run_streamlit.sh    # Linux/Mac with venv
+├── src/                    # Source code
+│   ├── main.py             # Main Streamlit app
+│   ├── core/               # Core FM calculation modules
+│   │   ├── __init__.py
+│   │   ├── waveforms.py
+│   │   ├── spectrum.py
+│   │   ├── demodulation.py
+│   │   ├── fm_calculator.py
+│   │   └── validations.py
+│   └── app/                # Streamlit UI components
+│       ├── __init__.py
+│       ├── sidebar.py
+│       ├── components.py
+│       └── tabs.py
+├── requirements.txt
+└── README.md
 ```
 
 ---

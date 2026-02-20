@@ -21,7 +21,7 @@ OPCIÓN C: Manualmente (Cualquier sistema)
 2. Instale las dependencias:
    pip install -r requirements.txt
 3. Ejecute la aplicación:
-   streamlit run fm_demo_streamlit.py
+    streamlit run src/main.py
 
 NOTA:
 - La aplicación se abrirá en su navegador web predeterminado.
